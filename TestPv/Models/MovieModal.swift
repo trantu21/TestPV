@@ -7,7 +7,15 @@
 
 import Foundation
 
+struct MovieModal: Codable {
+	let results: [Movie]?
+	
+}
+
 struct Movie: Codable {
+	let backdropPath: String?
 	let posterPath: String?
 	let title: String?
+	let releaseDate: String?
+	let voteAverage: Float?
 }

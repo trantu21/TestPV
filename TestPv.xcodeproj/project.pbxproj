@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE3F85582806EF9100B230C7 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F85562806EF9100B230C7 /* CustomCell.swift */; };
+		AE3F85592806EF9100B230C7 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE3F85572806EF9100B230C7 /* CustomCell.xib */; };
+		AE3F855B2806F7C500B230C7 /* ImageModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F855A2806F7C500B230C7 /* ImageModal.swift */; };
 		AE673CD428059436001943EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE673CD328059436001943EE /* AppDelegate.swift */; };
 		AE673CD628059436001943EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE673CD528059436001943EE /* SceneDelegate.swift */; };
 		AE673CD828059436001943EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE673CD728059436001943EE /* ViewController.swift */; };
@@ -15,10 +18,13 @@
 		AE673CE028059437001943EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE673CDE28059437001943EE /* LaunchScreen.storyboard */; };
 		AE673CED2805CE4C001943EE /* MoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE673CEC2805CE4C001943EE /* MoviesViewModel.swift */; };
 		AE673CEF2805CFFC001943EE /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE673CEE2805CFFC001943EE /* APIServices.swift */; };
-		AE673CF22805DE5D001943EE /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE673CF12805DE5D001943EE /* Movie.swift */; };
+		AE673CF22805DE5D001943EE /* MovieModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE673CF12805DE5D001943EE /* MovieModal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE3F85562806EF9100B230C7 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		AE3F85572806EF9100B230C7 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		AE3F855A2806F7C500B230C7 /* ImageModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModal.swift; sourceTree = "<group>"; };
 		AE673CD028059436001943EE /* TestPv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestPv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE673CD328059436001943EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE673CD528059436001943EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,7 +35,7 @@
 		AE673CE128059437001943EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE673CEC2805CE4C001943EE /* MoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewModel.swift; sourceTree = "<group>"; };
 		AE673CEE2805CFFC001943EE /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
-		AE673CF12805DE5D001943EE /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		AE673CF12805DE5D001943EE /* MovieModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +54,24 @@
 			children = (
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		AE3F854E2806EE5C00B230C7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AE673CD328059436001943EE /* AppDelegate.swift */,
+				AE673CD528059436001943EE /* SceneDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AE3F854F2806EF0300B230C7 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				AE3F85562806EF9100B230C7 /* CustomCell.swift */,
+				AE3F85572806EF9100B230C7 /* CustomCell.xib */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 		AE673CC728059436001943EE = {
@@ -70,12 +94,12 @@
 		AE673CD228059436001943EE /* TestPv */ = {
 			isa = PBXGroup;
 			children = (
+				AE3F854F2806EF0300B230C7 /* TableViewCells */,
+				AE3F854E2806EE5C00B230C7 /* Common */,
 				AE673CF02805DE46001943EE /* Models */,
 				AE673CEB2805CE00001943EE /* ViewModels */,
 				AE673CEA2805CDED001943EE /* API Services */,
 				AE673CE92805CDE1001943EE /* Controllers */,
-				AE673CD328059436001943EE /* AppDelegate.swift */,
-				AE673CD528059436001943EE /* SceneDelegate.swift */,
 				AE673CD928059436001943EE /* Main.storyboard */,
 				AE673CDC28059437001943EE /* Assets.xcassets */,
 				AE673CDE28059437001943EE /* LaunchScreen.storyboard */,
@@ -111,7 +135,8 @@
 		AE673CF02805DE46001943EE /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AE673CF12805DE5D001943EE /* Movie.swift */,
+				AE673CF12805DE5D001943EE /* MovieModal.swift */,
+				AE3F855A2806F7C500B230C7 /* ImageModal.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -176,6 +201,7 @@
 			files = (
 				AE673CE028059437001943EE /* LaunchScreen.storyboard in Resources */,
 				AE673CDD28059437001943EE /* Assets.xcassets in Resources */,
+				AE3F85592806EF9100B230C7 /* CustomCell.xib in Resources */,
 				AE673CDB28059436001943EE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,10 +215,12 @@
 			files = (
 				AE673CED2805CE4C001943EE /* MoviesViewModel.swift in Sources */,
 				AE673CD828059436001943EE /* ViewController.swift in Sources */,
-				AE673CF22805DE5D001943EE /* Movie.swift in Sources */,
+				AE673CF22805DE5D001943EE /* MovieModal.swift in Sources */,
 				AE673CD428059436001943EE /* AppDelegate.swift in Sources */,
 				AE673CD628059436001943EE /* SceneDelegate.swift in Sources */,
+				AE3F85582806EF9100B230C7 /* CustomCell.swift in Sources */,
 				AE673CEF2805CFFC001943EE /* APIServices.swift in Sources */,
+				AE3F855B2806F7C500B230C7 /* ImageModal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +375,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -357,6 +386,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 13.0;
 			};
 			name = Debug;
 		};
@@ -375,6 +405,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -385,6 +416,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 13.0;
 			};
 			name = Release;
 		};
